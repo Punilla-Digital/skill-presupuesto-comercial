@@ -1,0 +1,15 @@
+interface:
+  display_name: Presupuesto Comercial
+  short_description: Propuestas comerciales con identidad Punilla Digital
+  default_prompt: Usá $presupuesto-comercial para crear un presupuesto visual con
+    precios, alcance y condiciones.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+  brand_color: '#190044'
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

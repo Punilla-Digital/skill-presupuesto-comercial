@@ -1,34 +1,40 @@
 ---
 name: presupuesto-comercial
-description: "Preparar una versión básica para redactar un presupuesto con precios y condiciones. Usar cuando el usuario pida redactar un presupuesto con precios y condiciones a partir de información suministrada."
+description: Crear y actualizar presupuestos y propuestas comerciales de Punilla Digital para páginas web, software, automatizaciones, diseño y servicios digitales. Incluir tablas de precios, métodos de pago, condiciones, alcance, iconos, imágenes, capturas y demos conceptuales o reales, con tema de marca y gráfica 2D o 3D configurable. Entregar PDF por defecto.
 ---
 
 # Presupuesto Comercial
 
-Versión básica de ejemplo de Punilla Digital.
+Crear propuestas claras, visuales y orientadas a empresarios y decisores. Explicar el problema, la solución ofrecida, el alcance y la inversión sin saturar con detalles técnicos. Mantener español argentino y tono profesional.
 
-## Datos de entrada
-Solicitar cliente, servicios, cantidades, precios, moneda y condiciones. Preguntar solo por datos imprescindibles; señalar supuestos y pendientes para el resto.
+## Recursos
 
-## Identidad configurable
-- Usar la marca, logo, paleta, tipografías, tema y tono que proporcione el usuario. Sus instrucciones prevalecen sobre este ejemplo.
-- Ejemplo editable: marca Punilla Digital; violeta #7C3AED, naranja #F97316, cian #06B6D4, negro #0B0B10 y blanco #FFFFFF. Son valores de demostración, no una certificación de colores oficiales.
-- Tema claro: fondo blanco y texto oscuro. Tema oscuro: fondo negro, texto blanco, acentos moderados y grilla sutil cuando el formato lo permita.
-- Tipografía: sans serif legible; usar la fuente de marca si se proporciona. Tono: profesional, directo y español rioplatense.
-- Logo: usar exclusivamente el archivo suministrado, conservar proporciones y dejar espacio alrededor. Si falta, marcar «logo pendiente»; no inventarlo.
-- Aplicar estilo a la presentación y a las indicaciones visuales; no modificar cifras, consultas, contenido educativo ni datos para ajustarlos al diseño.
+- Leer `references/marca.md` para contactos, logo, tema y reglas visuales.
+- Leer `references/condiciones.md` para precios, pagos y condiciones de contratación.
+- Leer `references/visuales.md` al incluir iconos, gráficos, demos, imágenes o capturas.
+- Usar `assets/punilla-digital-logo.png` como logo oficial, sin redibujarlo.
 
-## Procedimiento
-1. Identificar el resultado esperado y revisar el material proporcionado.
-2. Calcular subtotales y total; indicar impuestos solo si fueron suministrados; conservar pagos, plazos y vigencia; marcar condiciones pendientes.
-3. Aplicar la identidad configurable cuando corresponda.
-4. Revisar coherencia, ortografía, unidades y datos antes de entregar.
+## Flujo
 
-## Entrega
-Datos, tabla de conceptos, total y condiciones.
+1. Recuperar los datos aportados: cliente, proyecto, necesidad, solución, alcance, entregables, alternativas, importes, moneda, impuestos, pagos, plazo, validez y exclusiones. Si se modifica una propuesta, leer su versión vigente y conservar lo no modificado.
+2. Distinguir datos confirmados de sugerencias. Preguntar solo lo indispensable para emitir un presupuesto final. Si faltan precios u otras condiciones decisivas, avanzar con un borrador claramente rotulado y campos «A confirmar»; no inventar compromisos ni trasladar condiciones de otro cliente.
+3. Seleccionar formato: PDF A4 vertical por defecto; PDF horizontal 16:9 cuando se solicite presentación; admitir otros formatos expresos. Usar la skill PDF disponible para generar, renderizar y revisar. Aplicar las skills de documentos o presentaciones cuando se pidan editables.
+4. Definir tema claro premium de Punilla Digital por defecto; admitir oscuro premium. Aplicar 2D por defecto y 3D si se solicita. Respetar la elección expresa sin pedir confirmaciones repetidas.
+5. Organizar el documento según la complejidad: portada; necesidad y objetivo; solución y beneficios; alcance y entregables; etapas/plazo; inversión; pagos y condiciones; cierre/contacto. Combinar secciones en propuestas cortas. No llenar páginas para alcanzar una cantidad fija.
+6. Preparar tablas legibles y recalcular los importes con Decimal o aritmética equivalente. Separar costos únicos, mensuales, anuales, opcionales y externos. Mostrar el total de la alternativa seleccionada, sin sumar opciones mutuamente excluyentes.
+7. Integrar visuales que ayuden a entender el alcance. Etiquetar conceptos y demos como tales. Evitar prometer funciones por la sola presencia de una imagen.
+8. Verificar contenido y renderizar todas las páginas: revisar logo, contraste, tamaño de textos, recortes, tablas, números, enlaces y ausencia de datos pendientes ocultos. Corregir y repetir solo lo necesario.
+9. Guardar el entregable mediante el mecanismo persistente disponible, respetando sus instrucciones. Entregar el PDF con enlace y resumen breve de supuestos o datos pendientes. No enviar al cliente ni publicar una demo sin instrucción.
 
-## Límites
-No inventar clientes, precios, resultados, credenciales ni fuentes. Entregar texto, tablas e indicaciones en esta versión; no prometer imágenes, PDF, PPTX, videos o integraciones ya ejecutadas. Si el usuario pide un archivo o acción externa, comprobar las herramientas disponibles y comunicar el alcance real. No publicar, enviar ni ejecutar acciones externas por el solo hecho de usar esta skill.
+## Estructura comercial
 
-## Ejemplo
-Armá un presupuesto con estos servicios y precios.
+- Portada: «Presupuesto comercial», nombre del cliente/proyecto, fecha, identificador si existe, logo, resumen de la solución y contacto.
+- Solución: describir qué podrá hacer el cliente y por qué le resulta útil. Fundamentar beneficios sin inventar métricas de ahorro, ventas o posicionamiento.
+- Alcance: detallar cantidades, pantallas, módulos, integraciones, revisiones y entregables confirmados. Explicar qué debe aportar el cliente y qué queda fuera.
+- Inversión: mostrar moneda inequívoca, importes, impuestos cuando estén definidos, periodicidad y total. Añadir comparativa de planes solo si aporta una decisión real.
+- Condiciones: precisar vigencia, pagos, inicio, dependencias del cronograma, aprobación, cambios, soporte y costos recurrentes según lo autorizado.
+- Cierre: próximo paso concreto y vías de contacto. Evitar redactar aceptación o pago como ya realizados.
+
+## Integración con otras habilidades
+
+Aplicar Web Project para el método y las etapas de proyectos web; SEO Web y Medición y campañas solo para los servicios incluidos en el alcance. Aplicar Presentación y análisis de software PDF para análisis visual cuando corresponda. Usar Generador de QR si se solicita un QR real, verificando su destino. No ampliar el precio o alcance por activar otra skill.

@@ -1,36 +1,44 @@
 # Presupuesto Comercial
 
-Skill básica de ejemplo creada por Punilla Digital para redactar un presupuesto con precios y condiciones.
+Habilidad completa de Punilla Digital para crear y actualizar presupuestos y propuestas comerciales visuales. Reemplaza la versión básica de este repositorio.
 
 ## Alcance
-Datos, tabla de conceptos, total y condiciones. Esta versión prepara contenido e instrucciones; no incluye scripts, integraciones ni exportación automática de archivos.
+
+- Problema, solución, alcance, entregables, inversión y condiciones.
+- Tablas de precios con cantidades, periodicidad, descuentos e impuestos confirmados.
+- Métodos de pago, financiación y condiciones adaptados a cada encargo.
+- Logo y tema Punilla Digital: claro premium u oscuro premium.
+- Gráfica 2D por defecto o 3D cuando se solicite.
+- Iconos, imágenes, capturas y demos reales o conceptuales identificadas.
+- PDF A4 vertical por defecto; PDF horizontal 16:9 a pedido.
+
+## Archivos
+
+- [SKILL.md](SKILL.md): flujo completo.
+- [references/marca.md](references/marca.md): identidad y contactos.
+- [references/condiciones.md](references/condiciones.md): importes, pagos y contratación.
+- [references/visuales.md](references/visuales.md): gráficos, iconos, capturas y demos.
+- [assets/punilla-digital-logo.png](assets/punilla-digital-logo.png): logo incluido.
+- [assets/icon.svg](assets/icon.svg) y [agents/openai.yaml](agents/openai.yaml): icono y metadatos.
 
 ## Uso
-- Consultar [SKILL.md](SKILL.md) y proporcionar los datos de entrada que indica.
-- En un agente compatible, colocar la carpeta `presupuesto-comercial` con el archivo `SKILL.md` en el directorio de skills que admita ese entorno.
-- En otros asistentes, adjuntar o pegar las instrucciones como contexto. Esto no garantiza instalación ni activación automática.
 
-## Personalizar la marca
-Cambiar la sección «Identidad configurable» en SKILL.md o indicar la configuración en cada pedido:
+Copiar la carpeta completa con el nombre `presupuesto-comercial` al directorio de habilidades de un agente compatible. Conservar referencias, logo e icono junto al SKILL.md. La publicación en GitHub no instala automáticamente la habilidad en ChatGPT.
 
-```text
-Marca: Mi negocio
-Logo: archivo adjunto
-Colores: #7C3AED, #F97316 y #FFFFFF
-Tipografía: sans serif o la fuente de mi marca
-Tema: claro u oscuro
-Tono: profesional y directo
-```
+Ejemplo:
 
-La paleta incluida es ilustrativa. No se incluye un archivo de logo; utilizar uno propio. La identidad afecta la presentación cuando corresponde, sin cambiar datos o cálculos.
+> Usá Presupuesto Comercial para preparar una propuesta de sistema de gestión, con estos precios y condiciones, tema oscuro y gráfica 3D. Entregá PDF.
 
-## Ejemplo de pedido
-> Armá un presupuesto con estos servicios y precios.
+Aportar cliente, necesidad, alcance, importes, moneda y condiciones disponibles. Si falta un dato decisivo, generar un borrador con «A confirmar»; no inventar precios ni compromisos. Recalcular importes y separar costos iniciales, recurrentes, externos y opcionales.
 
-## Resultado esperado
-Datos, tabla de conceptos, total y condiciones.
+## Herramientas necesarias
 
-## Créditos
-[Punilla Digital](https://punilladigital.com.ar/) · [Catálogo de Skills](https://punilladigital.com.ar/skils/)
+No incluye un generador propio. Requiere un agente con herramientas para crear PDF, renderizar y revisar todas las páginas. Las ilustraciones generadas necesitan una herramienta de imágenes; los editables requieren herramientas del formato solicitado. Las otras habilidades mencionadas son opcionales según la tarea y no están incluidas.
 
-Consultar LICENSE, si está presente, para las condiciones de uso.
+Los precios y ofertas deben verificarse antes de incorporarlos. Las condiciones históricas de otro cliente no se convierten en políticas generales. No enviar documentos a clientes ni publicar demos sin instrucción.
+
+## Origen
+
+Copia de la habilidad instalada en Complementos, publicada el 15/10/2026, con sus instrucciones, referencias y recursos. Esta publicación no modifica la habilidad instalada.
+
+[Punilla Digital](https://punilladigital.com.ar/) · [Licencia](LICENSE)
